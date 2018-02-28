@@ -1,0 +1,205 @@
+/* Simon Game webapp styling
+   M Allen: Freelance Web Developer - 2017
+*/
+body {
+  font-size: 0;
+  background: #63393E;
+  font-family: 'Poiret One', sans-serif;
+}
+
+button {
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.offset {
+  margin-top: 3%;
+}
+
+/* Dark grey circular background to game */
+#gameBackground {
+  background: #303030;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #808080;
+  margin: auto;
+  box-shadow: 0 0 2vw #000000;
+  position: relative;
+}
+
+/* Game elements including colour buttons and central controller */
+#gameElements {
+  width: 36vw;
+  height: 36vw;
+  position: relative;
+  top: 2vw;
+  left: 2vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Dark grey background for central controller in centre and on top */
+#controllerBackground {
+  background: #303030;
+  z-index: 1;
+  position: absolute;
+  border-radius: 50%;
+  width: 19.2vw;
+  height: 19.2vw;
+  top: 8.4vw;
+  left: 8.4vw;
+}
+
+/* Light grey space to hold controller buttons */
+#controllerPanel {
+  background: #E0E0E0;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left: 2vw;
+  top: 2vw;
+  width: 15.2vw;
+  height: 15.2vw;
+}
+
+/* Define font features for controller panel */
+h1 {
+  font-size: 2.24vw;
+  font-weight: bold;
+  margin: 1.6vw 0 0.64vw 0;
+}
+h2 {
+  font-size: 1.28vw;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Screen to display current score and errors */
+#scoreboard {
+  display: inline-block;
+  vertical-align: middle;
+  background: #63393E;
+  border: 0.3vw ridge #808080;
+  border-radius: 0.5vw;
+  width: 5.5vw;
+  height: 3.5vw;
+}
+
+#score {
+  font-family: "Orbitron", sans-serif;
+  color: orange !important;
+  font-size: 2vw;
+  margin: 0.3vw 0 0 0;
+}
+
+/* Format controller buttons */
+.controllerButtons {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.5vw;
+}
+
+/* Formatting for all elements in controllerButtons class */
+.controllerButtons > * {
+  margin: 0.25vw;
+}
+
+/* Format controller button backgrounds */
+#startButton, #strictButton, #onButton, #strictLight {
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 0 0.25vw #000000;
+  background: #303030;
+}
+
+#startButton, #strictButton {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+}
+
+#onButton {
+  display: inline-block;
+  vertical-align: middle;
+  width: 4vw;
+  height: 2.3vw;
+  border-radius: 0.2vw;
+  border-style: groove;
+}
+
+#strictLight {
+  width: 0.75vw;
+  height: 0.75vw;
+  border-radius: 50%;
+}
+
+/* Format controller button foregrounds */
+#startBtn, #strictBtn, #onBtn, #light {
+  position: absolute;
+}
+
+#light {
+  background: #000000;
+  border-radius: 50%;
+  width: 0.5vw;
+  height: 0.5vw;
+  left: 0.16vw;
+  top: 0.12vw;
+}
+#startBtn, #strictBtn {
+  border-radius: 50%;
+  width: 1.4vw;
+  height: 1.4vw;
+}
+
+#startBtn {
+  background: #E60000;
+  left: 0.31vw;
+  top: 0.245vw;
+}
+
+#strictBtn {
+  background: #FFFF00;
+  left: 0.31vw;
+  top: 0.25vw;
+}
+
+#onBtn {
+  width: 1.8vw;
+  height: 1.6vw;
+  left: 0.18vw;
+  top: 0.2vw;
+  background: #038CFE;
+  border-width: 0.2vw;
+  border-style: ridge;
+}
+
+/* Game play buttons */
+.buttonArea {
+  position: absolute;
+  height: 17vw;
+  width: 17vw;
+  border-style: solid;
+  border-color: #808080;
+}
+
+#greenBtn {
+  background-color: green;
+}
+#redBtn {
+  left: 19vw;
+  background-color: red;
+}
+#yellowBtn {
+  top: 19vw;
+  background-color: yellow;
+}
+#blueBtn {
+  top: 19vw;
+  left: 19vw;
+  background-color: blue;
+}

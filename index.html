@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Simon Game web app
+    Demonstration project using HTML5, CSS3, Javascript, Bootstrap, jQuery
+
+    Game showcasing Bootstrap formatting, jQuery for page updates and Javascript for logic
+
+    Mark Allen - Freelance Web Developer - 2017
+-->
+
+<html>
+<head>
+  <title>Simon Game</title>
+<!-- Load fonts, script, stylesheet, Bootstrap 3 and jQuery 3 -->
+  <link href="https://fonts.googleapis.com/css?family=Poiret One" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body id="bg">
+  <div class="container offset">
+    <!-- Game layout -->
+    <div id="gameBackground">
+      <div id="gameElements">
+        <div id="controllerBackground">
+          <div id="controllerPanel">
+            <!-- Name of the game plus Registered Trademark symbol -->
+            <span id="gameName"><h1>Simon &reg;</h1></span>
+            <!-- Display to give the current number of steps -->
+            <div id="scoreboard"><h1 id="score"></h1>
+            </div>
+            <!-- Start, strict and on/off buttons plus strict state light -->
+            <div class="controllerButtons">
+              <!-- Game start/restart button -->
+              <div id="startButton">
+                <button type="button" id="startBtn"></button>
+              </div>
+              <br>
+              <h2>Start</h2>
+            </div>
+            <div class="controllerButtons">
+              <!-- Strict mode toggle button -->
+              <div id="strictButton">
+                <button type="button" id="strictBtn"></button>
+              </div>
+              <br />
+              <h2>Strict</h2>
+            </div>
+            <!-- Strict mode indicator light -->
+            <div id="strictLight">
+              <div id="light"></div>
+            </div>
+            <br />
+            <div class="controllerButtons">
+              <!-- Game on/off button -->
+              <h2>Off</h2>
+              <div id="onButton">
+                <button type="button" id="onBtn"><div></div><div></div></button>
+              </div>
+              <h2>On</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Gameplay buttons -->
+        <button class="buttonArea" id="greenBtn" type="button" ></button>
+        <button class="buttonArea" id="redBtn" type="button" ></button>
+        <button class="buttonArea" id="yellowBtn" type="button" ></button>
+        <button class="buttonArea" id="blueBtn" type="button" ></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
